@@ -14,6 +14,10 @@ export default class App extends React.Component {
         this.state = {letra: "", cont: 0, id: 0};
         this.handleClick = this.handleClick.bind(this);
     }
+    
+    componentDidMount(){
+        window.alert("Bienvenido a la aventura")
+    }
 
     handleClick(e) {
         const letra = e.target.value;
